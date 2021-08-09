@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"> 
+	<head>
+		<meta charset="UTF-8">
+		<title>Colored Box Exercise</title>
+		
+		<script language="javascript" src="drawBox.js"> </script>
+	</head>
+	
+	<body>
+		<h3>Draw a box</h3>
+		<form name="boxCharacteristics">
+			<label for="color">Box color:</label><br>
+			<input type="text" name="color"><br><br>
+			
+			<label for="width">Box width:</label><br>
+			<input type="text" name="width"><br><br>
+			
+			<label for="height">Box height:</label><br>
+			<input type="text" name="height"><br><br>
+			
+			<input type="button" value="Set box characteristics" onclick="drawBox();"><br>
+		</form>
+		
+		<p id="error_message"> </p>
+		
+		<canvas id="theCanvas" width="10000" height="10000"></canvas>
+	
+	</body>
+	
+</html>
